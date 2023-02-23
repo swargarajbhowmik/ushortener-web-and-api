@@ -34,18 +34,6 @@ CREATE TABLE `api` (
   `requests_left` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `api`
---
-
-INSERT INTO `api` (`id`, `api_key`, `requests_left`) VALUES
-(1, 'O48pNTzZZNTgjNUrbEPOcDjBYDfd4G3v', 10),
-(2, 'FCFNiOrRyCtPlDtDAHFc6yCbLQ4TIzis', 0),
-(3, '52nAZZ4klulQTNsGfhEgCp1CxC93kG62', 10),
-(4, '1orKDnG69dYxvTT9PEdE0SRHQoPwZGq9', 999),
-(5, 'eI2y0njQtn9MePlOAxPKnTTCNwzs9Q8q', 0),
-(6, 'COMPANY_API_KEY', 99995);
-
 -- --------------------------------------------------------
 
 --
@@ -57,27 +45,6 @@ CREATE TABLE `shorten_links` (
   `urllong` varchar(255) NOT NULL,
   `urlshort` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `shorten_links`
---
-
-INSERT INTO `shorten_links` (`id`, `urllong`, `urlshort`) VALUES
-(1, 'https://stackoverflow.com/', 'DH0OL'),
-(2, 'https://stackoverflow.com/', 'vCYmv'),
-(3, 'https://stackoverflow.com/', 'Vkb4S'),
-(4, 'https://stackoverflow.com/', 'pYUQY'),
-(5, 'https://stackoverflow.com/', 'RjybOy'),
-(6, '1234', 'rvvo2Q'),
-(7, '1234', 's2VH22'),
-(8, '1234', 'hyBDJm'),
-(9, 'https://www.w3schools.com/', 'ZlGuKU'),
-(10, 'https://stackoverflow.com', 'BKdvBM'),
-(11, 'http://localhost/UShortnerAPI/createapi.php', 'JvOER9'),
-(12, 'https://google.com', '9umpBu'),
-(13, 'https://www.google.com/', 'HrndfN'),
-(14, 'https://google.com', 'YCyLAq'),
-(15, 'http://localhost/UShortnerAPI/viewapi.php?url=YCyLAq', 'o6rtd8');
 
 --
 -- Indexes for dumped tables
